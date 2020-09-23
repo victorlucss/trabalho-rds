@@ -1,16 +1,6 @@
 'use strict';
 
-const config = {
-    username: process.env.USERNAME,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
-    host: process.env.HOST,
-    logging: false,
-    dialect: 'postgres',
-    define: {
-        timestamps: false
-    },
-};
+const config = require('../../config/database')
 
 const fs = require('fs')
 const path = require('path')
